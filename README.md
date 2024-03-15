@@ -1,3 +1,3 @@
 # IT115 Final Project
 Antonio Bucio
-favorite number is 14 
+green is my favortie color
