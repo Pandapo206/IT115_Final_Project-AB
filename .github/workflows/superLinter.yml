@@ -1,0 +1,27 @@
+name: Super Linter
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    name: Lint Codebase
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Use Node.js 20
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20'
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Super-Linter
+        uses: super-linter/super-linter@v6.3.0
+        with:
+          entryPoint: /linting/linters
+          args: --exit-zero
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
