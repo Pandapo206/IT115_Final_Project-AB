@@ -1,3 +1,3 @@
 # IT115 Final Project
 Antonio Bucio
-Green is my favorite color 
+green is my favortie color
