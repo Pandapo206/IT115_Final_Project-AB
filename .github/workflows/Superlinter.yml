@@ -24,7 +24,7 @@ jobs:
       - name: Set up Super-Linter
         uses: super-linter/super-linter@v6.3.0
         with:
-          entryPoint: /linting/linters
+          entryPoint: /.github/workflows/Superlinter
           args: --exit-zero
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
